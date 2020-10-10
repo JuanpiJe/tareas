@@ -1,6 +1,5 @@
-const fs = require("fs")
 const process = require("process")
-const listaTareas = JSON.parse(fs.readFileSync('./tareas.json', 'utf-8' ))
+const moduloTareas = require('./moduloTareas.js')
 let comando = process.argv[2]
 let estadoAFiltrar = process.argv[3]
 let estadoAFiltrarEnProgreso = process.argv[4]
